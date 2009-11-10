@@ -6,6 +6,8 @@ The bottom row of the Monome is used to stop clips.
 
 To use the patch, drag the "Monome Clip Launcher" file anywhere into your effects chain.  The patch lives inside of a Live audio effect, but it doesn't touch the audio.  I usually put it in my master effect chain, but it can go anywhere.
 
+You also need to be running MonomeSerial with the prefix set to /launch
+
 This requires the beta version of Live 8.1 with Max for Live.  See http://www.ableton.com/maxforlive for more information.
 
 TODO:
