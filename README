@@ -3,7 +3,6 @@ This tool allows you to launch clips from your Monome 40h.
 This requires the beta version of Live 8.1 with Max for Live.  See http://www.ableton.com/maxforlive for more information.
 
 TODO:
-blinking clips should blink in sync with each other
 dynamically scale to larger monomes
 configurable address prefix
 scene launch buttons
