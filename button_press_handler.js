@@ -13,3 +13,4 @@ function list(x,y,position)
      outlet(0, [x,y]);
    }
 }
+list.immediate = 1;
