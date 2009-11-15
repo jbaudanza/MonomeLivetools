@@ -40,15 +40,10 @@ function msg_float(new_value) {
       if( this.playing_clip_slot != this.clip_slot || this.transport_playing != 1 ) {
         this.output_enabled = false;
         output_bitmask(0);  
-        post("Disabling playing_clip_slot: " + this.playing_clip_slot + " this clip slot: "  + this.clip_slot + " transport playing: "
-+ this.transport_playing + " inlet: " + 
-                inlet +"  " +  
-                " new value: " + new_value + "\n");
       }
     } else {
       if( this.playing_clip_slot == this.clip_slot && this.transport_playing == 1 ) {
         this.output_enabled = true;
-        post("Enabling " + this.playing_clip_slot + " " + this.transport_playing + "\n");
       }
     }
   }
@@ -59,7 +54,6 @@ msg_float.immediate = 1;
 msg_int = msg_float;
 
 function bang() {
-  post( "Bang\n");
   i = 60/bpm * 1000;
   task.interval = i;
   task.repeat(99, i);
